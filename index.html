@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8" />
+	<title>angularjs-16-isolation-scope-directives</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="main.js"></script> 
+</head>
+<body>
+
+
+<div ng-controller = 'firstCtrl'>
+<div>my ctrl name is {{name}}</div>
+ <div>My ctrl color is: {{color}}</div>
+ <div><button ng-click='reverse()'>Reverse name</button></div>
+ 
+  
+    <foo-bar name="{{name}}" color="color" reverse='reverse()'></foo-bar>
+</div>
+ 
+
+</body>
+</html>
